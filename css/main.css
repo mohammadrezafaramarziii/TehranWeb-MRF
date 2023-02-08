@@ -1,0 +1,264 @@
+
+:root
+{
+    --color1: #412c5fe7;
+    --color2: #6825fc;
+    --color3: #008fff;
+    --color4: #f3f3f3;
+}
+
+body{
+    background-color: var(--color4);
+}
+
+/* ************************************** */
+
+/* container style start */
+.container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 30px;
+    width: 90%;
+    margin: 20px auto;
+}
+/* container style end */
+
+/* ************************************** */
+
+/* section style start */
+.container .item{
+    border-radius: 7px;
+}
+
+.container .item-section{
+    background-color: #fff;
+    padding: 15px 40px;
+}
+
+.container .item-section .title-sections{
+    width: 100%;
+    color: var(--color1);
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+.container .item-section .title-sections .text-title-sections{
+    font-weight: 900;
+}
+
+.data{
+    margin-top: 30px;
+}
+
+.data .title-data{
+    margin: 10px auto;
+}
+
+.data .title-data .text-title-data{
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;
+}
+ 
+.data .text-data{
+    margin: 0 auto;
+}
+
+.data .text-data p{
+   font-size: 18px;
+   font-weight: 300;
+   color: var(--color1);
+   line-height: 45px;
+}
+
+.data .pic-data{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.data .pic-data img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* section style end */
+
+/* ************************************** */
+
+/* aside style start */
+.container .item-aside{
+    
+}
+
+.container .item-aside aside{
+    border: 1px solid #09002a17;
+    width: 100%;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.container .item-aside .title-asides{
+    width: 100%;
+    color: var(--color1);
+    font-size: 16px;
+}
+
+.container .item-aside .title-asides .text-title-asides{
+    font-weight: 900;
+    border-radius: 50px;
+    margin-bottom: 0.4rem;
+}
+
+.container .item-aside .title-asides p{
+    font-weight: 400;
+    font-size: 14px;
+}
+/* ************************************** */
+
+/* list content start */
+.list-contents .list{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.list-contents .list li{
+    margin-top: 1rem;
+}
+
+.list-contents .list li a{
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 1rem 0.5rem;
+    background-color: #fff;
+    color: var(--color1);
+}
+
+.list-contents .list li a:hover{
+    background-color: var(--color2);
+    color: #fff;
+}
+/* list content end */
+
+/* ************************************** */
+
+/* suggestion start */
+.suggestion-aside .suggestion-list{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.suggestion-aside .suggestion-list li{
+    margin-top: 1rem;
+}
+
+.suggestion-aside .suggestion-list li a{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 1rem 0.5rem;
+    background-color: #fff;
+    color: var(--color1);
+}
+
+.suggestion-aside .suggestion-list li a:hover{
+    color: var(--color2);
+}
+
+.suggestion-aside .suggestion-list li a span{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color3);
+    margin-top: 0.9rem;
+    display: block;
+}
+
+.suggestion-aside .suggestion-list li a .time{
+    display: inline;
+    margin-left: 15px;
+}
+
+.suggestion-aside .suggestion-list li a i{
+    margin-left: 5px;
+}
+
+.suggestion-aside .btn-all-suggestion{
+    width: 100%;
+    margin-top: 2.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.suggestion-aside .btn-all-suggestion a{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color2);
+    border: 1px solid var(--color3);
+    border-radius: 7px;
+    padding: 0.6rem 4rem;
+}
+
+.suggestion-aside .btn-all-suggestion a:hover{
+    background-color: var(--color3);
+    color: #fff;
+}
+/* suggestion end */
+
+/* ************************************** */
+
+/* news box start */
+.news-aside .news-box{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.news-aside .news-box form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.news-aside .news-box form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid var(--color3);
+    background-color: transparent;
+    border-radius: 8px;
+    display: block;
+    padding: 0.5rem 1.2rem;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.news-aside .news-box form input:focus{
+    border: 2px solid var(--color2);
+}
+
+.news-aside .news-box form button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--color3);
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.news-aside .news-box form button:hover{
+    background-color: var(--color2);
+}
+/* news box end */
+
+/* ************************************** */
+
+/* aside style end */
+
+

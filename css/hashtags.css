@@ -1,0 +1,122 @@
+.hashtag-box{
+    border-top: 1px solid rgb(206, 206, 206);
+    margin-top: 2rem;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "time-send hashtags" "social social";
+    grid-row-gap: 30px;
+}
+
+.hashtag-box .time-post-content{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color3);
+    grid-area: time-send;
+}
+
+.hashtag-box .time-post-content i{
+    margin-left: 0.6rem;
+    font-size: 15px;
+}
+
+.hashtag-box .hashtags{
+    text-align: left;
+    width: 100%;
+    grid-area: hashtags;
+}
+
+.hashtag-box .hashtags a{
+    padding: 0.1rem 0.8rem;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(211, 211, 211);
+    color: var(--color1);
+    border-radius: 5px;
+}
+
+.hashtag-box .hashtags a:hover{
+    background-color: var(--color2);
+    color: var(--color4);
+}
+
+.hashtag-box .hashtags a:nth-child(2){
+    margin: 0 0.7rem;
+}
+
+.hashtag-box .social-media-hashtag{
+    width: 100%;
+    grid-area: social;
+}
+
+.hashtag-box .social-media-hashtag li{
+    display: inline-block;
+}
+
+.hashtag-box .social-media-hashtag li:nth-child(even){
+    margin: 0 1rem;
+}
+
+.hashtag-box .social-media-hashtag li a{
+    font-size: 19px;
+    color: var(--color3);
+}
+
+.hashtag-box .social-media-hashtag li a:hover{
+    color: var(--color2);
+}
+
+@media screen and (max-width: 605px) {
+    .hashtag-box{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "hashtags hashtags" "time-send social";
+        grid-row-gap: 40px;
+        grid-column-gap: 0;
+    }    
+
+    .hashtag-box .hashtags{
+        text-align: center;
+    }   
+
+    .hashtag-box .time-post-content{
+        text-align: right;
+    }
+    
+    .hashtag-box .social-media-hashtag{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hashtag-box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "hashtags" "time-send" "social";
+        grid-row-gap: 20px;
+        grid-column-gap: 0;
+    }    
+
+    .hashtag-box .hashtags{
+        text-align: center;
+    } 
+    
+    .hashtag-box .hashtags a{
+        padding: 2px 0.8rem;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: rgb(211, 211, 211);
+        color: var(--color1);
+        border-radius: 5px;
+    }    
+
+    .hashtag-box .time-post-content{
+        text-align: center;
+    }
+    
+    .hashtag-box .social-media-hashtag{
+        text-align: center;
+    }
+}

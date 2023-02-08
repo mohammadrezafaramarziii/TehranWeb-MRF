@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: Vazir;
+	direction: rtl;
+	transition: all 0.2s;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(197, 197, 197);
+    border-radius: 100px;
+}
+
+body::-webkit-scrollbar-track{
+    margin: 5px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a {
+    text-decoration: none;
+}
+body {
+	line-height: 1;
+	background-color: var(--light2);
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
